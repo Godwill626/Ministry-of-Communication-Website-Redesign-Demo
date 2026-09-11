@@ -1,6 +1,7 @@
 # Ministry of Communication Website Redesign — Demo
 
 **Developer:** Azieh Godwill Teneng
+
 **Organization Context:** Ministry of Communication, Cameroon
 **Period:** November 2024
 **Project Type:** Government Website Redesign & Cybersecurity-Aware Web Development
