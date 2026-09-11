@@ -1,0 +1,265 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a, form, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background: #f5f5f5;
+}
+
+header {
+    background: #007A5E; /* Green */
+    color: #FFD700; /* Yellow */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 4px solid #CE1126; /* Red */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 60px;
+    margin-right: 15px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #FFD700; /* Yellow */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #CE1126; /* Red */
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(rgba(0,122,94,0.8), rgba(0,122,94,0.6)), url('hero-bg.jpg') no-repeat center center/cover;
+    color: #FFD700; /* Yellow */
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px #CE1126; /* Red Shadow */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px #CE1126; /* Red Shadow */
+}
+
+.hero .btn {
+    background: #CE1126; /* Red */
+    color: #FFD700; /* Yellow */
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #A10D20; /* Darker Red */
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    color: #007A5E; /* Green */
+    font-weight: 700;
+}
+
+.values {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.values div {
+    background: #f9f9f9;
+    padding: 25px;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    max-width: 350px;
+    transition: transform 0.3s ease;
+}
+
+.values div:hover {
+    transform: translateY(-10px);
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.news-grid article {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.news-grid article:hover {
+    transform: scale(1.02);
+}
+
+.news-grid article h3 {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    color: #CE1126; /* Red */
+    font-weight: bold;
+}
+
+.news-grid article a {
+    color: #007A5E; /* Green */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.news-grid article a:hover {
+    color: #CE1126; /* Red */
+}
+
+#leadership .minister-photo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#leadership .minister-photo img {
+    width: 350px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 80%; /* To make the photo round */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.projects-grid .project {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #007A5E; /* Green */
+    transition: transform 0.3s ease;
+}
+
+.projects-grid .project:hover {
+    transform: translateY(-10px);
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #007A5E; /* Green */
+    font-size: 1rem;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background: #CE1126; /* Red */
+    color: #FFD700; /* Yellow */
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #A10D20; /* Darker Red */
+}
+
+footer {
+    text-align: center;
+    background: #007A5E; /* Green */
+    color: #FFD700; /* Yellow */
+    padding: 15px 0;
+    border-top: 4px solid #CE1126; /* Red */
+}
+
+footer .social-links a {
+    color: #FFD700; /* Yellow */
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #CE1126; /* Red */
+}
